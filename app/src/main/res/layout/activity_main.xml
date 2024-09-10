@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="24sp"
+        android:background="#03A9F4"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/imageViewCustom"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/newlogo"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageViewCustom"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Age"
+            android:inputType="number"
+            />
+        <TextView
+            android:id="@+id/textViewYears"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayoutAge"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Height"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/textViewHeightUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cm"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayoutHeight"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Weight"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:id="@+id/textViewWeightUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="kg"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:textSize="17dp"
+        android:background="#ADD8E6"
+        android:layout_below="@id/linearLayoutWeight"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

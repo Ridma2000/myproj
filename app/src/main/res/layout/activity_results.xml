@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator - Results"
+        android:background="#03A9F4"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewBMICategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewBMIResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@id/textViewBMICategory"/>
+
+</RelativeLayout>
